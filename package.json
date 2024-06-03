@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/pastelcyborg/oeuvre/issues"
   },
-  "homepage": "https://github.com/pastelcyborg/oeuvre#readme"
+  "homepage": "https://github.com/pastelcyborg/oeuvre#readme",
+  "dependencies": {
+    "vanilla-framework": "^4.11.0"
+  }
 }
