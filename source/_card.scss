@@ -1,0 +1,67 @@
+.oeuvre-card {
+  @extend .p-card;
+
+  > p {
+    @extend .p-card__content;
+  }
+}
+
+.oeuvre-card-no-padding {
+  @extend .p-card;
+  @extend .u-no-padding;
+
+  > img {
+    @extend .p-card__image;
+  }
+
+  > div {
+    @extend .p-card__inner;
+  }
+
+  > hr {
+    @extend .u-no-margin--bottom;
+  }
+}
+
+.oeuvre-card-header {
+  @extend .p-card;
+
+  > img {
+    @extend .p-card__thumbnail;
+  }
+
+  > hr {
+    @extend .u-sv1;
+  }
+
+  > p {
+    @extend .p-card__content;
+  }
+}
+
+.oeuvre-card-image {
+  @extend .p-card;
+
+  > div {
+    @extend .p-card__content;
+
+    > img {
+      @extend .p-card__image;
+    }
+
+    > p {
+      @extend .u-no-padding--bottom;
+
+      // Coming from rule in patterns Scss file
+      margin-bottom: 0.125rem;
+    }
+  }
+}
+
+.oeuvre-card-highlighted {
+  @extend .p-card--highlighted;
+
+  > p {
+    @extend .p-card__content;
+  }
+}

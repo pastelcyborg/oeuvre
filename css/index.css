@@ -793,25 +793,25 @@ p:not([class*=p-heading--]):not([class*=p-muted-heading]) + .p-muted-heading {
 }
 
 .p-switch__slider::before, .p-side-navigation:target .p-side-navigation__drawer, [class*=p-side-navigation--]:target .p-side-navigation__drawer, .p-side-navigation.is-expanded .p-side-navigation__drawer, .p-side-navigation.is-drawer-expanded .p-side-navigation__drawer, [class*=p-side-navigation--].is-expanded .p-side-navigation__drawer, [class*=p-side-navigation--].is-drawer-expanded .p-side-navigation__drawer, .p-navigation__dropdown,
-.p-navigation__dropdown--right, .p-modal__dialog, .p-contextual-menu__dropdown, .p-card--muted, .p-card--highlighted {
+.p-navigation__dropdown--right, .p-modal__dialog, .p-contextual-menu__dropdown, .p-card--muted, .p-card--highlighted, .oeuvre-card-highlighted {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15), 0 2px 2px -1px rgba(0, 0, 0, 0.15), 0 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 
-.p-notification--information, .p-notification--negative, .p-notification--caution, .p-notification--positive, .p-notification, .p-card, fieldset {
+.p-notification--information, .p-notification--negative, .p-notification--caution, .p-notification--positive, .p-notification, .p-card, .oeuvre-card-image, .oeuvre-card-header, .oeuvre-card-no-padding, .oeuvre-card, fieldset {
   border: 1.5px solid #d9d9d9;
 }
 
-.p-modal__dialog, .p-card--highlighted, .p-card, fieldset {
+.p-modal__dialog, .p-card--highlighted, .oeuvre-card-highlighted, .p-card, .oeuvre-card-image, .oeuvre-card-header, .oeuvre-card-no-padding, .oeuvre-card, fieldset {
   background-color: #fff;
   color: #000;
 }
 
-.p-card__inner, .p-modal__dialog, .p-card--highlighted, .p-card, fieldset {
+.p-card__inner, .oeuvre-card-no-padding > div, .p-modal__dialog, .p-card--highlighted, .oeuvre-card-highlighted, .p-card, .oeuvre-card-image, .oeuvre-card-header, .oeuvre-card-no-padding, .oeuvre-card, fieldset {
   overflow: auto;
   padding: 1rem;
 }
 
-.p-modal__dialog, .p-card--highlighted, .p-card, fieldset {
+.p-modal__dialog, .p-card--highlighted, .oeuvre-card-highlighted, .p-card, .oeuvre-card-image, .oeuvre-card-header, .oeuvre-card-no-padding, .oeuvre-card, fieldset {
   margin-bottom: 1.5rem;
   overflow: auto;
   padding: 1rem;
@@ -900,29 +900,29 @@ hr {
   display: block;
 }
 
-.u-no-margin--bottom:not(hr):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(p):not(small):not([class*=p-heading]):not([class*=p-button--link]) {
+.u-no-margin--bottom:not(hr):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(p):not(small):not([class*=p-heading]):not([class*=p-button--link]), .oeuvre-card-no-padding > hr:not(hr):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(p):not(small):not([class*=p-heading]):not([class*=p-button--link]) {
   margin-bottom: 0 !important;
 }
 
-.p-media-object--large .u-no-margin--bottom.p-media-object__title, .u-no-margin--bottom.p-heading--1, h1.u-no-margin--bottom, .u-no-margin--bottom.p-heading--2, h2.u-no-margin--bottom {
+.p-media-object--large .u-no-margin--bottom.p-media-object__title, .p-media-object--large .oeuvre-card-no-padding > hr.p-media-object__title, .u-no-margin--bottom.p-heading--1, .oeuvre-card-no-padding > hr.p-heading--1, h1.u-no-margin--bottom, .u-no-margin--bottom.p-heading--2, .oeuvre-card-no-padding > hr.p-heading--2, h2.u-no-margin--bottom {
   margin-bottom: -0.55rem !important;
 }
 @media (min-width: 1036px) {
-  .p-media-object--large .u-no-margin--bottom.p-media-object__title, .u-no-margin--bottom.p-heading--1, h1.u-no-margin--bottom, .u-no-margin--bottom.p-heading--2, h2.u-no-margin--bottom {
+  .p-media-object--large .u-no-margin--bottom.p-media-object__title, .p-media-object--large .oeuvre-card-no-padding > hr.p-media-object__title, .u-no-margin--bottom.p-heading--1, .oeuvre-card-no-padding > hr.p-heading--1, h1.u-no-margin--bottom, .u-no-margin--bottom.p-heading--2, .oeuvre-card-no-padding > hr.p-heading--2, h2.u-no-margin--bottom {
     margin-bottom: -0.55rem !important;
   }
 }
 @media (min-width: 1681px) {
-  .p-media-object--large .u-no-margin--bottom.p-media-object__title, .u-no-margin--bottom.p-heading--1, h1.u-no-margin--bottom, .u-no-margin--bottom.p-heading--2, h2.u-no-margin--bottom {
+  .p-media-object--large .u-no-margin--bottom.p-media-object__title, .p-media-object--large .oeuvre-card-no-padding > hr.p-media-object__title, .u-no-margin--bottom.p-heading--1, .oeuvre-card-no-padding > hr.p-heading--1, h1.u-no-margin--bottom, .u-no-margin--bottom.p-heading--2, .oeuvre-card-no-padding > hr.p-heading--2, h2.u-no-margin--bottom {
     margin-bottom: -0.55rem !important;
   }
 }
 
-.p-pull-quote--large .u-no-margin--bottom.p-pull-quote__quote, .u-no-margin--bottom.p-heading--3, h3.u-no-margin--bottom, .u-no-margin--bottom.p-panel__title, .p-pull-quote .u-no-margin--bottom.p-pull-quote__quote, .u-no-margin--bottom.p-modal__title, .u-no-margin--bottom.p-media-object__title, .u-no-margin--bottom.p-matrix__title, .u-no-margin--bottom.p-heading--4, h4.u-no-margin--bottom {
+.p-pull-quote--large .u-no-margin--bottom.p-pull-quote__quote, .p-pull-quote--large .oeuvre-card-no-padding > hr.p-pull-quote__quote, .u-no-margin--bottom.p-heading--3, .oeuvre-card-no-padding > hr.p-heading--3, h3.u-no-margin--bottom, .u-no-margin--bottom.p-panel__title, .oeuvre-card-no-padding > hr.p-panel__title, .p-pull-quote .u-no-margin--bottom.p-pull-quote__quote, .p-pull-quote .oeuvre-card-no-padding > hr.p-pull-quote__quote, .u-no-margin--bottom.p-modal__title, .oeuvre-card-no-padding > hr.p-modal__title, .u-no-margin--bottom.p-media-object__title, .oeuvre-card-no-padding > hr.p-media-object__title, .u-no-margin--bottom.p-matrix__title, .oeuvre-card-no-padding > hr.p-matrix__title, .u-no-margin--bottom.p-heading--4, .oeuvre-card-no-padding > hr.p-heading--4, h4.u-no-margin--bottom {
   margin-bottom: 0.05rem !important;
 }
 @media (min-width: 1036px) {
-  .p-pull-quote--large .u-no-margin--bottom.p-pull-quote__quote, .u-no-margin--bottom.p-heading--3, h3.u-no-margin--bottom, .u-no-margin--bottom.p-panel__title, .p-pull-quote .u-no-margin--bottom.p-pull-quote__quote, .u-no-margin--bottom.p-modal__title, .u-no-margin--bottom.p-media-object__title, .u-no-margin--bottom.p-matrix__title, .u-no-margin--bottom.p-heading--4, h4.u-no-margin--bottom {
+  .p-pull-quote--large .u-no-margin--bottom.p-pull-quote__quote, .p-pull-quote--large .oeuvre-card-no-padding > hr.p-pull-quote__quote, .u-no-margin--bottom.p-heading--3, .oeuvre-card-no-padding > hr.p-heading--3, h3.u-no-margin--bottom, .u-no-margin--bottom.p-panel__title, .oeuvre-card-no-padding > hr.p-panel__title, .p-pull-quote .u-no-margin--bottom.p-pull-quote__quote, .p-pull-quote .oeuvre-card-no-padding > hr.p-pull-quote__quote, .u-no-margin--bottom.p-modal__title, .oeuvre-card-no-padding > hr.p-modal__title, .u-no-margin--bottom.p-media-object__title, .oeuvre-card-no-padding > hr.p-media-object__title, .u-no-margin--bottom.p-matrix__title, .oeuvre-card-no-padding > hr.p-matrix__title, .u-no-margin--bottom.p-heading--4, .oeuvre-card-no-padding > hr.p-heading--4, h4.u-no-margin--bottom {
     margin-bottom: -0.45rem !important;
   }
 }
@@ -941,10 +941,13 @@ hr {
   }
 }
 
-.p-card__content, .p-button--link.u-no-margin--bottom, .u-no-margin--bottom.p-heading--5, .p-code-snippet .u-no-margin--bottom.p-code-snippet__title, h5.u-no-margin--bottom, .p-pull-quote .u-no-margin--bottom.p-pull-quote__citation,
+.p-card__content, .oeuvre-card-highlighted > p, .oeuvre-card-image > div, .oeuvre-card-header > p, .oeuvre-card > p, .p-button--link.u-no-margin--bottom, .oeuvre-card-no-padding > hr.p-button--link, .u-no-margin--bottom.p-heading--5, .oeuvre-card-no-padding > hr.p-heading--5, .p-code-snippet .u-no-margin--bottom.p-code-snippet__title, .p-code-snippet .oeuvre-card-no-padding > hr.p-code-snippet__title, h5.u-no-margin--bottom, .p-pull-quote .u-no-margin--bottom.p-pull-quote__citation, .p-pull-quote .oeuvre-card-no-padding > hr.p-pull-quote__citation,
 .p-pull-quote--small .u-no-margin--bottom.p-pull-quote__citation,
-.p-pull-quote--large .u-no-margin--bottom.p-pull-quote__citation, .u-no-margin--bottom.p-heading--6, h6.u-no-margin--bottom, p.u-no-margin--bottom, .u-no-margin--bottom.p-muted-heading, .u-no-margin--bottom.p-logo-section__title, .p-chip--information .u-no-margin--bottom.p-chip__lead, .p-chip--negative .u-no-margin--bottom.p-chip__lead, .p-chip--caution .u-no-margin--bottom.p-chip__lead, .p-chip--positive .u-no-margin--bottom.p-chip__lead, .p-chip .u-no-margin--bottom.p-chip__lead, .u-no-margin--bottom.p-breadcrumbs__item, .u-no-margin--bottom.p-text--small-caps,
-.u-no-margin--bottom.p-text--x-small-capitalised, .u-no-margin--bottom.p-table-of-contents__header {
+.p-pull-quote--small .oeuvre-card-no-padding > hr.p-pull-quote__citation,
+.p-pull-quote--large .u-no-margin--bottom.p-pull-quote__citation,
+.p-pull-quote--large .oeuvre-card-no-padding > hr.p-pull-quote__citation, .u-no-margin--bottom.p-heading--6, .oeuvre-card-no-padding > hr.p-heading--6, h6.u-no-margin--bottom, p.u-no-margin--bottom, .u-no-margin--bottom.p-muted-heading, .oeuvre-card-no-padding > hr.p-muted-heading, .u-no-margin--bottom.p-logo-section__title, .oeuvre-card-no-padding > hr.p-logo-section__title, .p-chip--information .u-no-margin--bottom.p-chip__lead, .p-chip--information .oeuvre-card-no-padding > hr.p-chip__lead, .p-chip--negative .u-no-margin--bottom.p-chip__lead, .p-chip--negative .oeuvre-card-no-padding > hr.p-chip__lead, .p-chip--caution .u-no-margin--bottom.p-chip__lead, .p-chip--caution .oeuvre-card-no-padding > hr.p-chip__lead, .p-chip--positive .u-no-margin--bottom.p-chip__lead, .p-chip--positive .oeuvre-card-no-padding > hr.p-chip__lead, .p-chip .u-no-margin--bottom.p-chip__lead, .p-chip .oeuvre-card-no-padding > hr.p-chip__lead, .u-no-margin--bottom.p-breadcrumbs__item, .oeuvre-card-no-padding > hr.p-breadcrumbs__item, .u-no-margin--bottom.p-text--small-caps, .oeuvre-card-no-padding > hr.p-text--small-caps,
+.u-no-margin--bottom.p-text--x-small-capitalised,
+.oeuvre-card-no-padding > hr.p-text--x-small-capitalised, .u-no-margin--bottom.p-table-of-contents__header, .oeuvre-card-no-padding > hr.p-table-of-contents__header {
   margin-bottom: 0.125rem !important;
 }
 
@@ -953,26 +956,38 @@ hr {
 .p-label--information, .p-status-label--caution,
 .p-label--caution, .p-status-label--positive,
 .p-label--positive, .p-status-label,
-.p-label, .u-no-margin--bottom.p-tooltip__message, .u-no-margin--bottom.p-media-object__meta-list-item, .u-no-margin--bottom.p-media-object__meta-list-item--venue, .u-no-margin--bottom.p-media-object__meta-list-item--location, .u-no-margin--bottom.p-media-object__meta-list-item--date, .u-no-margin--bottom.p-form-validation__message, .u-no-margin--bottom.p-form-help-text, .p-chip--information .u-no-margin--bottom.p-chip__lead, .p-chip--negative .u-no-margin--bottom.p-chip__lead, .p-chip--caution .u-no-margin--bottom.p-chip__lead, .p-chip--positive .u-no-margin--bottom.p-chip__lead, .p-chip .u-no-margin--bottom.p-chip__lead,
+.p-label, .u-no-margin--bottom.p-tooltip__message, .oeuvre-card-no-padding > hr.p-tooltip__message, .u-no-margin--bottom.p-media-object__meta-list-item, .oeuvre-card-no-padding > hr.p-media-object__meta-list-item, .u-no-margin--bottom.p-media-object__meta-list-item--venue, .oeuvre-card-no-padding > hr.p-media-object__meta-list-item--venue, .u-no-margin--bottom.p-media-object__meta-list-item--location, .oeuvre-card-no-padding > hr.p-media-object__meta-list-item--location, .u-no-margin--bottom.p-media-object__meta-list-item--date, .oeuvre-card-no-padding > hr.p-media-object__meta-list-item--date, .u-no-margin--bottom.p-form-validation__message, .oeuvre-card-no-padding > hr.p-form-validation__message, .u-no-margin--bottom.p-form-help-text, .oeuvre-card-no-padding > hr.p-form-help-text, .p-chip--information .u-no-margin--bottom.p-chip__lead, .p-chip--information .oeuvre-card-no-padding > hr.p-chip__lead, .p-chip--negative .u-no-margin--bottom.p-chip__lead, .p-chip--negative .oeuvre-card-no-padding > hr.p-chip__lead, .p-chip--caution .u-no-margin--bottom.p-chip__lead, .p-chip--caution .oeuvre-card-no-padding > hr.p-chip__lead, .p-chip--positive .u-no-margin--bottom.p-chip__lead, .p-chip--positive .oeuvre-card-no-padding > hr.p-chip__lead, .p-chip .u-no-margin--bottom.p-chip__lead, .p-chip .oeuvre-card-no-padding > hr.p-chip__lead,
 .p-chip--information .u-no-margin--bottom.p-chip__value,
+.p-chip--information .oeuvre-card-no-padding > hr.p-chip__value,
 .p-chip--negative .u-no-margin--bottom.p-chip__value,
+.p-chip--negative .oeuvre-card-no-padding > hr.p-chip__value,
 .p-chip--caution .u-no-margin--bottom.p-chip__value,
+.p-chip--caution .oeuvre-card-no-padding > hr.p-chip__value,
 .p-chip--positive .u-no-margin--bottom.p-chip__value,
-.p-chip .u-no-margin--bottom.p-chip__value, .u-no-margin--bottom.p-chip--information, .u-no-margin--bottom.p-chip--negative, .u-no-margin--bottom.p-chip--caution, .u-no-margin--bottom.p-chip--positive, .u-no-margin--bottom.p-chip, small.u-no-margin--bottom,
-.u-no-margin--bottom.p-text--small, .u-no-margin--bottom.p-status-label--negative,
-.u-no-margin--bottom.p-label--negative, .u-no-margin--bottom.p-status-label--information,
-.u-no-margin--bottom.p-label--information, .u-no-margin--bottom.p-status-label--caution,
-.u-no-margin--bottom.p-label--caution, .u-no-margin--bottom.p-status-label--positive,
-.u-no-margin--bottom.p-label--positive, .u-no-margin--bottom.p-status-label,
-.u-no-margin--bottom.p-label, .p-chip--information .p-chip__lead + .u-no-margin--bottom.p-chip__value::before, .p-chip--negative .p-chip__lead + .u-no-margin--bottom.p-chip__value::before, .p-chip--caution .p-chip__lead + .u-no-margin--bottom.p-chip__value::before, .p-chip--positive .p-chip__lead + .u-no-margin--bottom.p-chip__value::before, .p-chip .p-chip__lead + .u-no-margin--bottom.p-chip__value::before, .u-no-margin--bottom.p-badge,
-.u-no-margin--bottom.p-badge--negative, .u-no-margin--bottom.p-text--x-small, .p-table--mobile-card td.u-no-margin--bottom::before,
+.p-chip--positive .oeuvre-card-no-padding > hr.p-chip__value,
+.p-chip .u-no-margin--bottom.p-chip__value,
+.p-chip .oeuvre-card-no-padding > hr.p-chip__value, .u-no-margin--bottom.p-chip--information, .oeuvre-card-no-padding > hr.p-chip--information, .u-no-margin--bottom.p-chip--negative, .oeuvre-card-no-padding > hr.p-chip--negative, .u-no-margin--bottom.p-chip--caution, .oeuvre-card-no-padding > hr.p-chip--caution, .u-no-margin--bottom.p-chip--positive, .oeuvre-card-no-padding > hr.p-chip--positive, .u-no-margin--bottom.p-chip, .oeuvre-card-no-padding > hr.p-chip, small.u-no-margin--bottom,
+.u-no-margin--bottom.p-text--small,
+.oeuvre-card-no-padding > hr.p-text--small, .u-no-margin--bottom.p-status-label--negative, .oeuvre-card-no-padding > hr.p-status-label--negative,
+.u-no-margin--bottom.p-label--negative,
+.oeuvre-card-no-padding > hr.p-label--negative, .u-no-margin--bottom.p-status-label--information, .oeuvre-card-no-padding > hr.p-status-label--information,
+.u-no-margin--bottom.p-label--information,
+.oeuvre-card-no-padding > hr.p-label--information, .u-no-margin--bottom.p-status-label--caution, .oeuvre-card-no-padding > hr.p-status-label--caution,
+.u-no-margin--bottom.p-label--caution,
+.oeuvre-card-no-padding > hr.p-label--caution, .u-no-margin--bottom.p-status-label--positive, .oeuvre-card-no-padding > hr.p-status-label--positive,
+.u-no-margin--bottom.p-label--positive,
+.oeuvre-card-no-padding > hr.p-label--positive, .u-no-margin--bottom.p-status-label, .oeuvre-card-no-padding > hr.p-status-label,
+.u-no-margin--bottom.p-label,
+.oeuvre-card-no-padding > hr.p-label, .p-chip--information .p-chip__lead + .u-no-margin--bottom.p-chip__value::before, .p-chip--information .oeuvre-card-no-padding > .p-chip__lead + hr.p-chip__value::before, .p-chip--negative .p-chip__lead + .u-no-margin--bottom.p-chip__value::before, .p-chip--negative .oeuvre-card-no-padding > .p-chip__lead + hr.p-chip__value::before, .p-chip--caution .p-chip__lead + .u-no-margin--bottom.p-chip__value::before, .p-chip--caution .oeuvre-card-no-padding > .p-chip__lead + hr.p-chip__value::before, .p-chip--positive .p-chip__lead + .u-no-margin--bottom.p-chip__value::before, .p-chip--positive .oeuvre-card-no-padding > .p-chip__lead + hr.p-chip__value::before, .p-chip .p-chip__lead + .u-no-margin--bottom.p-chip__value::before, .p-chip .oeuvre-card-no-padding > .p-chip__lead + hr.p-chip__value::before, .u-no-margin--bottom.p-badge, .oeuvre-card-no-padding > hr.p-badge,
+.u-no-margin--bottom.p-badge--negative,
+.oeuvre-card-no-padding > hr.p-badge--negative, .u-no-margin--bottom.p-text--x-small, .oeuvre-card-no-padding > hr.p-text--x-small, .p-table--mobile-card td.u-no-margin--bottom::before,
 .p-table--mobile-card tbody th.u-no-margin--bottom::before, thead th.u-no-margin--bottom {
   margin-bottom: -0.05rem !important;
 }
 
 .p-rule,
 .p-rule--muted,
-.p-rule--highlight, hr.u-no-margin--bottom {
+.p-rule--highlight, hr.u-no-margin--bottom, .oeuvre-card-no-padding > hr {
   margin-bottom: -1px !important;
   z-index: 2;
 }
@@ -2798,7 +2813,7 @@ p .p-button--link {
   opacity: 1 !important;
 }
 
-.p-card {
+.p-card, .oeuvre-card-image, .oeuvre-card-header, .oeuvre-card-no-padding, .oeuvre-card {
   padding: calc(1rem - 1px);
 }
 
@@ -2818,7 +2833,7 @@ p .p-button--link {
   padding: 1rem;
 }
 
-.p-card__image {
+.p-card__image, .oeuvre-card-image > div > img, .oeuvre-card-no-padding > img {
   display: block;
   margin-bottom: 0.5rem;
   width: 100%;
@@ -2833,7 +2848,7 @@ p .p-button--link {
   overflow: auto;
 }
 
-.p-card__thumbnail {
+.p-card__thumbnail, .oeuvre-card-header > img {
   max-height: 2rem;
 }
 
@@ -9995,7 +10010,7 @@ html.u-baseline-grid::after {
   width: 1px;
 }
 
-.u-no-padding {
+.u-no-padding, .oeuvre-card-no-padding {
   padding: 0 !important;
 }
 .u-no-padding--top {
@@ -10004,7 +10019,7 @@ html.u-baseline-grid::after {
 .u-no-padding--right {
   padding-right: 0 !important;
 }
-.u-no-padding--bottom {
+.u-no-padding--bottom, .oeuvre-card-image > div > p {
   padding-bottom: 0 !important;
 }
 .u-no-padding--left {
@@ -10017,7 +10032,7 @@ html.u-baseline-grid::after {
   white-space: nowrap !important;
 }
 
-.u-sv3::after, .u-sv2::after, .u-sv1::after, .u-sv-1::after, .u-sv-2::after, .u-sv-3::after {
+.u-sv3::after, .u-sv2::after, .u-sv1::after, .oeuvre-card-header > hr::after, .u-sv-1::after, .u-sv-2::after, .u-sv-3::after {
   content: "";
   display: block;
   height: 1px;
@@ -10036,7 +10051,7 @@ html.u-baseline-grid::after {
   margin-top: calc(-0.5rem - 1px);
 }
 
-.u-sv1::after {
+.u-sv1::after, .oeuvre-card-header > hr::after {
   margin-top: calc(0.5rem - 1px);
 }
 
@@ -10230,6 +10245,9 @@ ol.u-text-max-width,
   .u-theme-toggle {
     visibility: hidden !important;
   }
+}
+.oeuvre-card-image > div > p {
+  margin-bottom: 0.125rem;
 }
 
 /*# sourceMappingURL=index.css.map */

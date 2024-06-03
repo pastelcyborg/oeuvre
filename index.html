@@ -7,12 +7,149 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
   </head>
   <body>
-    <div class="p-card">
-      <h3>We'd love to have you join us as a partner.</h3>
-      <p class="p-card__content">
-        If you are an independent software vendor or bundle author, it's easy to
-        apply. You can find out more below.
-      </p>
+    <div style="max-width: 500px">
+      <h2>Vanilla card, default</h2>
+
+      <div class="p-card">
+        <h3>We'd love to have you join us as a partner.</h3>
+        <p class="p-card__content">
+          If you are an independent software vendor or bundle author, it's easy
+          to apply. You can find out more below.
+        </p>
+      </div>
+
+      <h2>Oeuvre card, default</h2>
+
+      <div class="oeuvre-card">
+        <h3>We'd love to have you join us as a partner.</h3>
+        <p>
+          If you are an independent software vendor or bundle author, it's easy
+          to apply. You can find out more below.
+        </p>
+      </div>
+
+      <h2>Vanilla card, content bleed</h2>
+
+      <div class="p-card u-no-padding">
+        <img
+          class="p-card__image"
+          src="https://assets.ubuntu.com/v1/0f33d832-The-State-of-Robotics.jpg"
+        />
+        <div class="p-card__inner">
+          <h3>The State of Robotics - August 2021</h3>
+          <p>
+            From robots learning to encourage social participation to detect
+            serious environmental problems, it was a learning month.
+          </p>
+        </div>
+        <hr class="u-no-margin--bottom" />
+        <div class="p-card__inner">
+          by <a href="#">Bartek Szopka</a> on 21st August 2021
+        </div>
+      </div>
+
+      <h2>Oeuvre card, content bleed</h2>
+
+      <div class="oeuvre-card-no-padding">
+        <img
+          src="https://assets.ubuntu.com/v1/0f33d832-The-State-of-Robotics.jpg"
+        />
+        <div>
+          <h3>The State of Robotics - August 2021</h3>
+          <p>
+            From robots learning to encourage social participation to detect
+            serious environmental problems, it was a learning month.
+          </p>
+        </div>
+        <hr />
+        <div>by <a href="#">Bartek Szopka</a> on 21st August 2021</div>
+      </div>
+
+      <h2>Vanilla card, header</h2>
+
+      <div class="p-card">
+        <img
+          class="p-card__thumbnail"
+          src="https://assets.ubuntu.com/v1/dca2e4c4-raspberry-logo.png"
+          alt=""
+        />
+        <hr class="u-sv1" />
+        <h3>Raspberry Pi2 and Pi3</h3>
+        <p class="p-card__content">
+          For fun, for education and for profit, the RPi makes device
+          development personal and entertaining. With support for both the Pi2
+          and the new Pi3, Ubuntu Core supports the world’s most beloved board.
+        </p>
+      </div>
+
+      <h2>Oeuvre card, header</h2>
+
+      <div class="oeuvre-card-header">
+        <img src="https://assets.ubuntu.com/v1/dca2e4c4-raspberry-logo.png" />
+        <hr />
+        <h3>Raspberry Pi2 and Pi3</h3>
+        <p>
+          For fun, for education and for profit, the RPi makes device
+          development personal and entertaining. With support for both the Pi2
+          and the new Pi3, Ubuntu Core supports the world’s most beloved board.
+        </p>
+      </div>
+
+      <h2>Vanilla card, image</h2>
+
+      <div class="p-card">
+        <div class="p-card__content">
+          <img
+            class="p-card__image"
+            alt=""
+            height="185"
+            width="330"
+            src="https://assets.ubuntu.com/v1/36f1139e-Design-and-Web-Team-Blog.jpg"
+          />
+          <h4>
+            <a href="#">Open Source Robotics Challenges</a>
+          </h4>
+          <p class="u-no-padding--bottom">
+            Open Source Robotics Challenges is a series of blogs...
+          </p>
+        </div>
+      </div>
+
+      <h2>Oeuvre card, image</h2>
+
+      <div class="oeuvre-card-image">
+        <div>
+          <img
+            height="185"
+            width="330"
+            src="https://assets.ubuntu.com/v1/36f1139e-Design-and-Web-Team-Blog.jpg"
+          />
+          <h4>
+            <a href="#">Open Source Robotics Challenges</a>
+          </h4>
+          <p>Open Source Robotics Challenges is a series of blogs...</p>
+        </div>
+      </div>
+
+      <h2>Vanilla card, highlighted</h2>
+
+      <div class="p-card--highlighted">
+        <h3>We'd love to have you join us as a partner.</h3>
+        <p class="p-card__content">
+          If you are an independent software vendor or bundle author, it's easy
+          to apply. You can find out more below.
+        </p>
+      </div>
+
+      <h2>Oeuvre card, highlighted</h2>
+
+      <div class="oeuvre-card-highlighted">
+        <h3>We'd love to have you join us as a partner.</h3>
+        <p>
+          If you are an independent software vendor or bundle author, it's easy
+          to apply. You can find out more below.
+        </p>
+      </div>
     </div>
   </body>
 </html>
