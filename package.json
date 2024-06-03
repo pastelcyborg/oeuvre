@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile-sass": "sass source/index.scss css/index.css"
+    "compile-sass": "sass source/index.scss css/index.css",
+    "start": "http-server"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/pastelcyborg/oeuvre#readme",
   "dependencies": {
+    "http-server": "^14.1.1",
     "sass": "^1.77.4",
     "vanilla-framework": "^4.11.0"
   }
