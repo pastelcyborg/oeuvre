@@ -10250,4 +10250,8 @@ ol.u-text-max-width,
   margin-bottom: 0.125rem;
 }
 
+.error-highlight {
+  border: 1px solid red;
+}
+
 /*# sourceMappingURL=index.css.map */

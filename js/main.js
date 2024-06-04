@@ -36,6 +36,10 @@ const oeuvreCardNoPaddingJson = {
   ],
 };
 
+function errorHighlightComponent(componentHtml) {
+  componentHtml.classList.add("error-highlight");
+}
+
 function analyzeComponent(componentHtml, jsonFragment, childHtml) {
   const currentElTagName = childHtml
     ? childHtml.tagName.toLowerCase()
@@ -49,6 +53,8 @@ function analyzeComponent(componentHtml, jsonFragment, childHtml) {
   if (!jsonFragment || !jsonFragment.tag) {
     console.error("JSON config mismatch with component:", componentHtml);
 
+    errorHighlightComponent(componentHtml);
+
     return;
   }
 
@@ -60,6 +66,8 @@ function analyzeComponent(componentHtml, jsonFragment, childHtml) {
       "is not allowed at this location in component:",
       componentHtml
     );
+
+    errorHighlightComponent(componentHtml);
 
     return;
   }

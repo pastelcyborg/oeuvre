@@ -5,3 +5,7 @@
 @include vanilla;
 
 @import "_card";
+
+.error-highlight {
+  border: 6px solid red;
+}
